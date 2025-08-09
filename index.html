@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Estimate & Tools</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Estimate Invoice Generator</h1>
+  <div id="estimate-tool">
+    <input type="text" id="item" placeholder="Item Name">
+    <input type="number" id="qty" placeholder="Quantity">
+    <input type="number" id="rate" placeholder="Rate">
+    <button onclick="addItem()">Add Item</button>
+    <table id="invoice">
+      <thead>
+        <tr><th>Item</th><th>Qty</th><th>Rate</th><th>Total</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <h2 id="grandTotal">Grand Total: ₹0</h2>
+    <button onclick="downloadInvoice()">Download Invoice</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
